@@ -51,7 +51,7 @@
     <record model="ir.actions.act_window" id="action_qc_trigger">
         <field name="name">Triggers</field>
         <field name="res_model">qc.trigger</field>
-        <field name="view_type">form</field>
+        
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="qc_trigger_tree2_view"/>
     </record>
