@@ -7,7 +7,11 @@
 
 {
     "name": "Quality Control OCA",
+<<<<<<< HEAD
     "version": "16.0.1.1.0",
+=======
+    "version": "15.0.1.0.0",
+>>>>>>> migrate quality_oca to odoo 16
     "category": "Quality Control",
     "license": "AGPL-3",
     "summary": "Generic infrastructure for quality tests.",

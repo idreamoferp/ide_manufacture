@@ -12,6 +12,7 @@
         <field name="arch" type="xml">
             <form>
                 <header>
+<<<<<<< HEAD
                     <button
                         name="action_draft"
                         type="object"
@@ -64,6 +65,18 @@
                             states="draft"
                             string="Set test"
                         />
+=======
+                    <button name="action_draft" type="object" attrs="{'invisible': [('state', '!=', 'canceled')]}" string="Draft" />
+                    <button name="action_todo" type="object" class="oe_highlight" states="draft" string="Mark todo" />
+                    <button name="action_confirm" type="object" class="oe_highlight" states="ready" string="Confirm" icon="fa-check" />
+                    <button name="action_approve" type="object" states="waiting" class="oe_highlight" groups="quality_control_oca.group_quality_control_manager" string="Approve" />
+                    <button name="action_cancel" type="object" attrs="{'invisible': [('state', 'not in', ['waiting', 'ready', 'failed', 'success'])]}" string="Cancel"  icon="fa-ban" />
+                    <field name="state"  widget="statusbar" statusbar_visible="draft,waiting,success" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" type="action" name="%(action_qc_inspection_set_test)d" icon="fa-bookmark-o" states="draft" string="Set test" />
+>>>>>>> migrate quality_oca to odoo 16
                     </div>
                     <h1>
                         <label string="Inspection " for="name" />
@@ -90,6 +103,7 @@
                                     <field name="name" />
                                     <field name="question_type" />
                                     <field name="possible_ql_values" invisible="1" />
+<<<<<<< HEAD
                                     <field
                                         name="qualitative_value"
                                         attrs="{'readonly': [('question_type', '=', 'quantitative')]}"
@@ -103,6 +117,11 @@
                                         groups="uom.group_uom"
                                         attrs="{'readonly': [('question_type', '=', 'qualitative')]}"
                                     />
+=======
+                                    <field name="qualitative_value" attrs="{'readonly': [('question_type', '=', 'quantitative')]}" />
+                                    <field name="quantitative_value" attrs="{'readonly': [('question_type', '=', 'qualitative')]}" />
+                                    <field name="uom_id" groups="uom.group_uom" attrs="{'readonly': [('question_type', '=', 'qualitative')]}" />
+>>>>>>> migrate quality_oca to odoo 16
                                     <field name="test_uom_category" invisible="1" />
                                     <field name="min_value" invisible="1" />
                                     <field name="max_value" invisible="1" />
@@ -113,25 +132,40 @@
                         </page>
                         <page string="Notes">
                             <group string="Internal notes">
+<<<<<<< HEAD
                                 <field name="internal_notes" nolabel="1" />
                             </group>
                             <group string="External notes">
                                 <field name="external_notes" nolabel="1" />
+=======
+                                <field name="internal_notes" nolabel="1" colspan="2"/>
+                            </group>
+                            <group string="External notes">
+                                <field name="external_notes" nolabel="1" colspan="2"/>
+>>>>>>> migrate quality_oca to odoo 16
                             </group>
                         </page>
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">
+<<<<<<< HEAD
                     <field
                         name="message_follower_ids"
                         widget="mail_followers"
                         groups="base.group_user"
                     />
+=======
+                    <field name="message_follower_ids" widget="mail_followers"  groups="base.group_user" />
+>>>>>>> migrate quality_oca to odoo 16
                     <field name="message_ids" widget="mail_thread" />
                 </div>
             </form>
         </field>
     </record>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> migrate quality_oca to odoo 16
     <record model="ir.ui.view" id="qc_inspection_tree_view">
         <field name="name">qc.inspection.tree</field>
         <field name="model">qc.inspection</field>
@@ -147,6 +181,10 @@
             </tree>
         </field>
     </record>
+<<<<<<< HEAD
+=======
+
+>>>>>>> migrate quality_oca to odoo 16
     <record model="ir.ui.view" id="qc_inspection_search_view">
         <field name="name">qc.inspection.search</field>
         <field name="model">qc.inspection</field>
@@ -160,6 +198,7 @@
                     <field name="test" />
                 </group>
                 <newline />
+<<<<<<< HEAD
                 <filter
                     string="Correct"
                     name="correct"
@@ -190,6 +229,15 @@
                         domain="[]"
                         context="{'group_by': 'user'}"
                     />
+=======
+                <filter string="Correct" name="correct" domain="[('success', '=', True)]" />
+                <filter string="Incorrect" name="incorrect" domain="[('success', '=', False)]" />
+                <newline />
+                <group expand="0" string="Group by...">
+                    <filter string="Reference" name="group_by_object_id" domain="[]" context="{'group_by': 'object_id'}"  />
+                    <filter string="Test" name="group_by_test" domain="[]" context="{'group_by': 'test'}" />
+                    <filter string="Responsible" name="group_by_user" domain="[]" context="{'group_by': 'user'}" />
+>>>>>>> migrate quality_oca to odoo 16
                     <filter
                         string="Product"
                         name="group_by_product_id"
@@ -218,10 +266,15 @@
             </search>
         </field>
     </record>
+<<<<<<< HEAD
+=======
+
+>>>>>>> migrate quality_oca to odoo 16
     <record model="ir.actions.act_window" id="action_qc_inspection">
         <field name="name">Inspections</field>
         <field name="res_model">qc.inspection</field>
         <field name="view_mode">tree,form</field>
+<<<<<<< HEAD
     </record>
     <menuitem
         name="Inspections"
@@ -229,21 +282,30 @@
         id="qc_inspection_menu"
         action="action_qc_inspection"
     />
+=======
+    </record>    
+    
+>>>>>>> migrate quality_oca to odoo 16
     <record model="ir.ui.view" id="qc_inspection_line_tree_view">
         <field name="name">qc.inspection.line.tree</field>
         <field name="model">qc.inspection.line</field>
         <field name="arch" type="xml">
+<<<<<<< HEAD
             <tree
                 decoration-danger="success==False"
                 decoration-info="success==True"
                 delete="false"
                 create="false"
             >
+=======
+            <tree decoration-danger="success==False" decoration-info="success==True" delete="false" create="false">
+>>>>>>> migrate quality_oca to odoo 16
                 <field name="inspection_id" />
                 <field name="product_id" />
                 <field name="name" />
                 <field name="question_type" />
                 <field name="possible_ql_values" invisible="1" />
+<<<<<<< HEAD
                 <field
                     name="qualitative_value"
                     attrs="{'readonly': [('question_type', '=', 'quantitative')]}"
@@ -257,12 +319,21 @@
                     groups="uom.group_uom"
                     attrs="{'readonly': [('question_type', '=', 'qualitative')]}"
                 />
+=======
+                <field name="qualitative_value" attrs="{'readonly': [('question_type', '=', 'quantitative')]}" />
+                <field name="quantitative_value" attrs="{'readonly': [('question_type', '=', 'qualitative')]}" />
+                <field name="uom_id" groups="uom.group_uom" attrs="{'readonly': [('question_type', '=', 'qualitative')]}" />
+>>>>>>> migrate quality_oca to odoo 16
                 <field name="test_uom_category" invisible="1" />
                 <field name="valid_values" />
                 <field name="success" />
             </tree>
         </field>
     </record>
+<<<<<<< HEAD
+=======
+
+>>>>>>> migrate quality_oca to odoo 16
     <record model="ir.ui.view" id="qc_inspection_line_search_view">
         <field name="name">qc.inspection.line.search</field>
         <field name="model">qc.inspection.line</field>
@@ -315,16 +386,33 @@
             </search>
         </field>
     </record>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> migrate quality_oca to odoo 16
     <record model="ir.actions.act_window" id="action_qc_inspection_line">
         <field name="name">Inspection lines</field>
         <field name="res_model">qc.inspection.line</field>
         <field name="view_mode">tree</field>
         <field name="view_id" ref="qc_inspection_line_tree_view" />
     </record>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> migrate quality_oca to odoo 16
     <menuitem
         name="Inspection lines"
         parent="qc_inspection_menu_parent"
         id="qc_inspection_lines_menu"
+<<<<<<< HEAD
         action="action_qc_inspection_line"
     />
+=======
+        action="action_qc_inspection_line"    />
+    <menuitem
+        name="Inspections"
+        parent="qc_inspection_menu_parent"
+        id="qc_inspection_menu"
+        action="action_qc_inspection"    />    
+>>>>>>> migrate quality_oca to odoo 16
 </odoo>

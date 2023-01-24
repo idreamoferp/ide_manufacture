@@ -4,7 +4,11 @@
 #
 msgid ""
 msgstr ""
+<<<<<<< HEAD
 "Project-Id-Version: Odoo Server 16.0\n"
+=======
+"Project-Id-Version: Odoo Server 15.0\n"
+>>>>>>> migrate quality_oca to odoo 16
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -211,7 +215,10 @@ msgid "Draft"
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_test_category.py:0
 #, python-format
 msgid "Error! You can not create recursive categories."
@@ -322,21 +329,49 @@ msgstr ""
 
 #. module: quality_control_oca
 #: model:ir.model.fields,help:quality_control_oca.field_qc_inspection__message_needaction
+<<<<<<< HEAD
 #: model:ir.model.fields,help:quality_control_oca.field_qc_test__message_needaction
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_line__message_needaction
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_needaction
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_needaction
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_needaction
+=======
+#: model:ir.model.fields,help:quality_control_oca.field_qc_inspection__message_unread
+#: model:ir.model.fields,help:quality_control_oca.field_qc_test__message_needaction
+#: model:ir.model.fields,help:quality_control_oca.field_qc_test__message_unread
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_line__message_needaction
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_line__message_unread
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_needaction
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_unread
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_needaction
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_unread
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_needaction
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_unread
+>>>>>>> migrate quality_oca to odoo 16
 msgid "If checked, new messages require your attention."
 msgstr ""
 
 #. module: quality_control_oca
 #: model:ir.model.fields,help:quality_control_oca.field_qc_inspection__message_has_error
+<<<<<<< HEAD
 #: model:ir.model.fields,help:quality_control_oca.field_qc_test__message_has_error
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_line__message_has_error
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_has_error
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_has_error
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_has_error
+=======
+#: model:ir.model.fields,help:quality_control_oca.field_qc_inspection__message_has_sms_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_test__message_has_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_test__message_has_sms_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_line__message_has_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_line__message_has_sms_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_has_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_has_sms_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_has_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_has_sms_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_has_error
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_has_sms_error
+>>>>>>> migrate quality_oca to odoo 16
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -572,7 +607,11 @@ msgstr ""
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_needaction_counter
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_needaction_counter
 #: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_needaction_counter
+<<<<<<< HEAD
 msgid "Number of messages requiring action"
+=======
+msgid "Number of messages which requires an action"
+>>>>>>> migrate quality_oca to odoo 16
 msgstr ""
 
 #. module: quality_control_oca
@@ -586,6 +625,19 @@ msgid "Number of messages with delivery error"
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,help:quality_control_oca.field_qc_inspection__message_unread_counter
+#: model:ir.model.fields,help:quality_control_oca.field_qc_test__message_unread_counter
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_line__message_unread_counter
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_category_line__message_unread_counter
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_line__message_unread_counter
+#: model:ir.model.fields,help:quality_control_oca.field_qc_trigger_product_template_line__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: quality_control_oca
+>>>>>>> migrate quality_oca to odoo 16
 #: model:qc.test.question,name:quality_control_oca.qc_test_question_1
 msgid "Overall quality"
 msgstr ""
@@ -614,7 +666,11 @@ msgid "Pre-fill with correct values"
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #: model:ir.model,name:quality_control_oca.model_product_template
+=======
+#: model:ir.model,name:quality_control_oca.model_product_product
+>>>>>>> migrate quality_oca to odoo 16
 #: model:ir.model.fields,field_description:quality_control_oca.field_qc_inspection__product_id
 #: model:ir.model.fields,field_description:quality_control_oca.field_qc_inspection_line__product_id
 #: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_line__product
@@ -630,16 +686,23 @@ msgid "Product Category"
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
+=======
+#: model:ir.model,name:quality_control_oca.model_product_template
+>>>>>>> migrate quality_oca to odoo 16
 #: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_template_line__product_template
 msgid "Product Template"
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #: model:ir.model,name:quality_control_oca.model_product_product
 msgid "Product Variant"
 msgstr ""
 
 #. module: quality_control_oca
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: model:ir.model.fields,help:quality_control_oca.field_qc_inspection__product_id
 #: model:ir.model.fields,help:quality_control_oca.field_qc_inspection_line__product_id
 msgid "Product associated with the inspection"
@@ -754,7 +817,10 @@ msgid "Question"
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_test.py:0
 #, python-format
 msgid ""
@@ -763,7 +829,10 @@ msgid ""
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_test.py:0
 #, python-format
 msgid "Question '%s' is not valid: you have to mark at least one value as OK."
@@ -822,6 +891,19 @@ msgid "Responsible User"
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_inspection__message_has_sms_error
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_test__message_has_sms_error
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_line__message_has_sms_error
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_category_line__message_has_sms_error
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_line__message_has_sms_error
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_template_line__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: quality_control_oca
+>>>>>>> migrate quality_oca to odoo 16
 #: model_terms:ir.ui.view,arch_db:quality_control_oca.qc_inspection_search_view
 msgid "Search inspection"
 msgstr ""
@@ -973,6 +1055,29 @@ msgid "Type of the exception activity on record."
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
+=======
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_inspection__message_unread
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_test__message_unread
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_line__message_unread
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_category_line__message_unread
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_line__message_unread
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_template_line__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: quality_control_oca
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_inspection__message_unread_counter
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_test__message_unread_counter
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_line__message_unread_counter
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_category_line__message_unread_counter
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_line__message_unread_counter
+#: model:ir.model.fields,field_description:quality_control_oca.field_qc_trigger_product_template_line__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: quality_control_oca
+>>>>>>> migrate quality_oca to odoo 16
 #: model:ir.model.fields,field_description:quality_control_oca.field_qc_inspection_line__uom_id
 msgid "UoM"
 msgstr ""
@@ -1043,35 +1148,50 @@ msgid "When this field is marked, the answer is considered correct."
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_inspection.py:0
 #, python-format
 msgid "You cannot remove an auto-generated inspection."
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_inspection.py:0
 #, python-format
 msgid "You cannot remove an inspection that is not in draft state."
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_inspection.py:0
 #, python-format
 msgid "You must first set the test to perform."
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_inspection.py:0
 #, python-format
 msgid "You should provide a unit of measure for quantitative questions."
 msgstr ""
 
 #. module: quality_control_oca
+<<<<<<< HEAD
 #. odoo-python
+=======
+>>>>>>> migrate quality_oca to odoo 16
 #: code:addons/quality_control_oca/models/qc_inspection.py:0
 #, python-format
 msgid "You should provide an answer for all qualitative questions."
